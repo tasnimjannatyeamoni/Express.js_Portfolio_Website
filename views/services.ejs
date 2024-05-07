@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+
+        main {
+            text-align: center;
+            margin: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            animation: floatText 3s ease infinite alternate;
+        }
+
+           @keyframes floatText {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .service-card {
+            background-color: #f8f8f8;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="<%= active === 'home' ? 'active' : '' %>"><a href="/">Home</a></li>
+                <li class="<%= active === 'about' ? 'active' : '' %>"><a href="/about">About</a></li>
+                <li class="<%= active === 'projects' ? 'active' : '' %>"><a href="/projects">Projects</a></li>
+                <li class="<%= active === 'services' ? 'active' : '' %>"><a href="/services">Services</a></li>
+                <li class="<%= active === 'contact' ? 'active' : '' %>"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Services</h1>
+        <div class="service-card">
+            <h2>Clean Code</h2>
+            <p>Specialized in writing clean and well-organized code. Also best practices and standards to ensure the highest quality code for your projects.</p>
+        </div>
+        <div class="service-card">
+            <h2>Great Support</h2>
+            <p>I provide exceptional support to the clients, ensuring a smooth and hassle-free experience. Also available to assist you with any questions or concerns.</p>
+        </div>
+    </main>
+</body>
+</html>

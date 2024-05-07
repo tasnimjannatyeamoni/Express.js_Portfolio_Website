@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  rgba(255, 255, 255, 0.5);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:  rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 5px;
+        }
+nav ul li{
+             display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 10px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            }
+
+        nav ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color:  rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .project-details {
+            margin-top: 20px;
+        }
+
+        .project-details h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-details p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="<%= active === 'home' ? 'active' : '' %>"><a href="/">Home</a></li>
+                <li class="<%= active === 'about' ? 'active' : '' %>"><a href="/about">About</a></li>
+                <li class="<%= active === 'projects' ? 'active' : '' %>"><a href="/projects">Projects</a></li>
+                <li class="<%= active === 'services' ? 'active' : '' %>"><a href="/services">Services</a></li>
+                <li class="<%= active === 'contact' ? 'active' : '' %>"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Projects</h1>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="/image/exhibition-IOT.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Banner Design</h2>
+                    <p>Banner Design for IoT Exhibition-2024, SMUCT Robotics & IoT Community.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/image/16th dec.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Banner Design</h2>
+                    <p>Banner Design for Victory Day, SMUCT Robotics & IoT Community.</p>
+                </div>
+            </div>
+             <div class="project-card">
+                <img src="/image/Portfolio-1.jpg" alt="Project 3">
+                <div class="project-details">
+                    <h2>Portfolio Website</h2>
+                    <p>Frontend: HTML, CSS.
+                        Backend: JavaScript, PHP.
+                    </p>
+        </div>
+            </div>
+             <div class="project-card">
+                <img src="/image/p-2.jpg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Logo Design</h2>
+                    
+        </div>
+             <div class="project-card">
+                <img src="/image/p-1.jpg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Typography</h2>
+                    
+        </div>
+    </main>
+</body>
+</html>
